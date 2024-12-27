@@ -10,8 +10,6 @@
     "nodemailer": "^6.9.16"
   },
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-    "build-js": "esbuild ./src/index.js --minify --outfile=./dist/index.js",
-    "copy-css": "cp ./src/styles.css ./dist/styles.css"
+    "build": "tailwindcss build ./src/input.css -o ./dist/output.css --minify"
   }
 }
